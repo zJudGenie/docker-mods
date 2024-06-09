@@ -4,7 +4,7 @@ on: [push, pull_request_target, workflow_dispatch]
 
 env:
   GITHUB_REPO: "zJudGenie/docker-mods" #don't modify
-  ENDPOINT: "zJudGenie/docker-mods" #don't modify
+  ENDPOINT: "zjudgenie/mods" #don't modify
   BASEIMAGE: "universal" #replace
   MODNAME: "openssh" #replace
   MULTI_ARCH: "true" #set to false if not needed
