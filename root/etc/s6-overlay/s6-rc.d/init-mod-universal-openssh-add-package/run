@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bash
+
+if ! command -v sshd; then
+    echo "**** Adding openssh to package install lists ****"
+    echo "openssh" >> /mod-repo-packages-to-install.list
+else
+    echo "**** openssh already installed, skipping ****"
+fi
