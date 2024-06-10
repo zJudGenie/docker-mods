@@ -2,4 +2,4 @@
 
 exec \
     s6-setuidgid abc \
-      sshd -D -e
+      /usr/sbin/sshd -D -e
