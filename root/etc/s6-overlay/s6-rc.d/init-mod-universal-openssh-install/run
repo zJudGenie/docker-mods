@@ -6,8 +6,9 @@ chown -R abc:abc /etc/ssh/
 
 if [[ ${#SSH_USER_DIRECTORY} -gt 0 ]]; then
   usermod --shell /bin/bash -d "${SSH_USER_DIRECTORY}" --unlock abc
+  echo -n "abc:$SSH_USER_PASSWORD" | chpasswd
+
+  echo "**** openssh mod set up ****"
 else
   echo "**** openssh mod parameter blank or missing ****"
 fi
-
-echo "**** openssh mod set up ****"
