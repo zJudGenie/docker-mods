@@ -2,3 +2,4 @@
 
 echo "**** Setting up openssh ****"
 ssh-keygen -A
+chown -R abc:abc /etc/ssh/
